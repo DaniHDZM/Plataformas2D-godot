@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://p8dqq658s55j"
+path="res://.godot/imported/Of Far Different Nature - EZDNB3 (CC-BY).ogg-261e3901a8c4b9fbfba25e766d6d1a6f.oggvorbisstr"
+
+[deps]
+
+source_file="res://Of Far Different Nature - LOOP BOX #2 (CC-BY 4.0)/Of Far Different Nature - EZDNB3 (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - EZDNB3 (CC-BY).ogg-261e3901a8c4b9fbfba25e766d6d1a6f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

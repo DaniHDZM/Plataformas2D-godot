@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://dlgpit1qamquv"]
+
+[ext_resource type="Script" uid="uid://cj8e7hfq0inad" path="res://Assets/Scripts/llave.gd" id="1_okl7c"]
+[ext_resource type="Texture2D" uid="uid://dgu4gus5brkif" path="res://Dungeon Tile Set.png" id="2_jfysr"]
+[ext_resource type="AudioStream" uid="uid://d1afujg48ynkp" path="res://Assets/Audio/Balloon start riding 1.wav" id="3_jfysr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eeppm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qb02c"]
+atlas = ExtResource("2_jfysr")
+region = Rect2(176, 144, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7b2x1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qb02c")
+}],
+"loop": true,
+"name": &"llave",
+"speed": 5.0
+}]
+
+[node name="Llave" type="Area2D"]
+script = ExtResource("1_okl7c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_eeppm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7b2x1")
+animation = &"llave"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_jfysr")
+volume_db = 10.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

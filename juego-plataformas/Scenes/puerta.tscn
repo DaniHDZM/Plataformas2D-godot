@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://d18prpfrsplqb"]
+
+[ext_resource type="Script" uid="uid://c8vs7f7ts6hs5" path="res://Assets/Scripts/puerta.gd" id="1_tswu4"]
+[ext_resource type="Texture2D" uid="uid://dgu4gus5brkif" path="res://Dungeon Tile Set.png" id="2_0nvjv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8lxdd"]
+atlas = ExtResource("2_0nvjv")
+region = Rect2(208, 160, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yocse"]
+atlas = ExtResource("2_0nvjv")
+region = Rect2(192, 160, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7qjlv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8lxdd")
+}],
+"loop": true,
+"name": &"Close",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yocse")
+}],
+"loop": true,
+"name": &"Open",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1i6uv"]
+size = Vector2(20, 32)
+
+[node name="Puerta" type="Area2D"]
+script = ExtResource("1_tswu4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7qjlv")
+animation = &"Close"
+autoplay = "Close"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1i6uv")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://3cu2j8otoo61"
+path="res://.godot/imported/Of Far Different Nature - Low Gravity (CC-BY).ogg-71c4ad07599f94b7082cc793222b1d5b.oggvorbisstr"
+
+[deps]
+
+source_file="res://Of Far Different Nature - LOOP BOX #2 (CC-BY 4.0)/Of Far Different Nature - Low Gravity (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Low Gravity (CC-BY).ogg-71c4ad07599f94b7082cc793222b1d5b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

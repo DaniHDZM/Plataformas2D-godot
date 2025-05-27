@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bh2wvbuocb11v"
+path="res://.godot/imported/Of Far Different Nature - Mystic Quest Dubstep (CC-BY).ogg-2b181e28c22bd780d10ee2f0a4d2499d.oggvorbisstr"
+
+[deps]
+
+source_file="res://Of Far Different Nature - LOOP BOX #2 (CC-BY 4.0)/Of Far Different Nature - Mystic Quest Dubstep (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Mystic Quest Dubstep (CC-BY).ogg-2b181e28c22bd780d10ee2f0a4d2499d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

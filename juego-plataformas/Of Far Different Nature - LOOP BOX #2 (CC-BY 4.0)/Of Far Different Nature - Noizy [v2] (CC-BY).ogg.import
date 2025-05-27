@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cauv5778ylm0f"
+path="res://.godot/imported/Of Far Different Nature - Noizy [v2] (CC-BY).ogg-cd7494ea07c73b83d65a9118ea9f9c3e.oggvorbisstr"
+
+[deps]
+
+source_file="res://Of Far Different Nature - LOOP BOX #2 (CC-BY 4.0)/Of Far Different Nature - Noizy [v2] (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Noizy [v2] (CC-BY).ogg-cd7494ea07c73b83d65a9118ea9f9c3e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

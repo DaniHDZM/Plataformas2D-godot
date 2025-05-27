@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cbyuiiq847yoq"
+path="res://.godot/imported/Of Far Different Nature - Force Field (CC-BY).ogg-dd402b9f0565805edaee96d171979175.oggvorbisstr"
+
+[deps]
+
+source_file="res://Of Far Different Nature - LOOP BOX #2 (CC-BY 4.0)/Of Far Different Nature - Force Field (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Force Field (CC-BY).ogg-dd402b9f0565805edaee96d171979175.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c4hgfoxogomh7"
+path="res://.godot/imported/Of Far Different Nature - Absurd Machine (CC-BY).ogg-735d9bee04833f916e8dcfe77dc7070b.oggvorbisstr"
+
+[deps]
+
+source_file="res://Of Far Different Nature - LOOP BOX #2 (CC-BY 4.0)/Of Far Different Nature - Absurd Machine (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Absurd Machine (CC-BY).ogg-735d9bee04833f916e8dcfe77dc7070b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

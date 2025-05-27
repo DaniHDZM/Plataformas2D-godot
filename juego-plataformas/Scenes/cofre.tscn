@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://2cogd6tq2nij"]
+
+[ext_resource type="Texture2D" uid="uid://dgu4gus5brkif" path="res://Dungeon Tile Set.png" id="1_j4g2v"]
+[ext_resource type="Script" uid="uid://vk5fj4jaip7t" path="res://Assets/Scripts/cofre.gd" id="1_m5mi3"]
+[ext_resource type="AudioStream" uid="uid://cs3wnwb3vgwkn" path="res://Assets/Audio/Fruit collect 1.wav" id="2_m5mi3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_115wg"]
+atlas = ExtResource("1_j4g2v")
+region = Rect2(192, 144, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nm2s3"]
+atlas = ExtResource("1_j4g2v")
+region = Rect2(208, 144, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mb2bl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_115wg")
+}],
+"loop": true,
+"name": &"Close",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nm2s3")
+}],
+"loop": true,
+"name": &"Open",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ghcr0"]
+
+[node name="Cofre" type="Area2D"]
+script = ExtResource("1_m5mi3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mb2bl")
+animation = &"Close"
+autoplay = "Close"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ghcr0")
+
+[node name="Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_m5mi3")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="finished" from="Sound" to="." method="_on_audio_stream_player_finished"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cbrd4mmamkrr0"
+path="res://.godot/imported/Of Far Different Nature - Cruiser (CC-BY).ogg-067c7706bec7f113cbd39c9ab02a09cd.oggvorbisstr"
+
+[deps]
+
+source_file="res://Of Far Different Nature - LOOP BOX #2 (CC-BY 4.0)/Of Far Different Nature - Cruiser (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Cruiser (CC-BY).ogg-067c7706bec7f113cbd39c9ab02a09cd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

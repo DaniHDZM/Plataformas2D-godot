@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c25kr6d1irte3"
+path="res://.godot/imported/Of Far Different Nature - Time Flies (CC-BY).ogg-81f2c00a4843fdabdd3d57ddf2a1c638.oggvorbisstr"
+
+[deps]
+
+source_file="res://Of Far Different Nature - LOOP BOX #2 (CC-BY 4.0)/Of Far Different Nature - Time Flies (CC-BY).ogg"
+dest_files=["res://.godot/imported/Of Far Different Nature - Time Flies (CC-BY).ogg-81f2c00a4843fdabdd3d57ddf2a1c638.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

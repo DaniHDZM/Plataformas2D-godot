@@ -1,0 +1,75 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4jv6dsmv4v0k"]
+
+[ext_resource type="Script" uid="uid://djjm7nigw3vmh" path="res://Assets/Scripts/gui.gd" id="1_bm56d"]
+[ext_resource type="AudioStream" uid="uid://kohcal8bmem5" path="res://Of Far Different Nature - LOOP BOX #2 (CC-BY 4.0)/Of Far Different Nature - Withstand (CC-BY).ogg" id="1_qyd3e"]
+
+[node name="Gui" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_bm56d")
+
+[node name="Container" type="MarginContainer" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -48.0
+offset_right = 48.0
+offset_bottom = 49.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Container"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 24
+text = "SCORE: 0000
+"
+
+[node name="GameOver" type="ColorRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0, 0, 0.592157)
+
+[node name="Container" type="VBoxContainer" parent="GameOver"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="GameOver/Container"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "HAS MUERTO"
+
+[node name="Buttons" type="HBoxContainer" parent="GameOver/Container"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Restart" type="Button" parent="GameOver/Container/Buttons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Reiniciar
+"
+
+[node name="Exit" type="Button" parent="GameOver/Container/Buttons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Salir
+"
+
+[node name="Sound" type="AudioStreamPlayer" parent="GameOver"]
+stream = ExtResource("1_qyd3e")
+parameters/looping = true
+
+[connection signal="pressed" from="GameOver/Container/Buttons/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="GameOver/Container/Buttons/Exit" to="." method="_on_exit_pressed"]
